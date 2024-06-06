@@ -1,0 +1,108 @@
+Task 1: React.js Basics
+Objective: Create a simple React component that displays a list of items (to-do list) and allows users to add new items.
+Approach:
+
+Component Structure: Created a TodoList component with state management to handle the list of to-do items and the input field for new items.
+State Management: Used the useState hook to manage the dynamic state of the to-do list.
+Event Handling: Added functions to handle form submission and item addition.
+Key Considerations:
+Ensuring the state updates correctly with user input.
+Properly binding event handlers to the component.
+Challenges:
+Handling edge cases such as empty input submissions.
+Keeping the component re-render efficient.
+Task 2: Next.js Routing
+Objective: Create a Next.js application with at least two pages and implement client-side navigation between them.
+Approach:
+
+Page Creation: Created two pages, index.js and about.js, in the pages directory.
+Client-Side Navigation: Used Next.js Link component for navigation between pages.
+Key Considerations:
+Ensuring that the navigation is smooth and without full page reloads.
+Leveraging Next.js's file-based routing system for simplicity.
+Challenges:
+Managing state between different pages if needed (handled via context or global state).
+Task 3: API Integration
+Objective: Integrate a mock API endpoint with the Next.js app using tools like JSON server.
+Approach:
+
+Setting up JSON Server: Created a mock API using JSON Server.
+Data Fetching: Used getServerSideProps in Next.js to fetch data from the mock API and display it on a page.
+Key Considerations:
+Ensuring that data fetching is efficient and correctly handled during server-side rendering.
+Managing potential errors during API requests.
+Challenges:
+Handling asynchronous data fetching and ensuring the UI updates correctly.
+Error handling and displaying appropriate messages to the user.
+Task 4: Node.js Server
+Objective: Set up a basic Node.js server using Express.js and create an API endpoint that returns a JSON response.
+Approach:
+
+Server Setup: Initialized an Express.js application.
+Endpoint Creation: Created a simple API endpoint that returns a JSON response.
+Key Considerations:
+Structuring the server for scalability and maintainability.
+Setting appropriate response headers.
+Challenges:
+Ensuring the server handles requests efficiently.
+Properly structuring routes and middleware for future expansion.
+Task 5: Middleware
+Objective: Implement a middleware function that logs information about incoming requests.
+Approach:
+
+Middleware Function: Created a middleware function that logs request details such as method, URL, and timestamp.
+Integration: Applied the middleware to the Express.js application.
+Key Considerations:
+Ensuring the middleware captures all necessary request details.
+Making the middleware reusable and easily configurable.
+Challenges:
+Balancing the amount of logged information with performance considerations.
+Ensuring that logging does not interfere with request handling.
+Task 6: Database Interaction
+Objective: Connect the Node.js server to a PostgreSQL database, create a table for storing user information, and implement CRUD operations.
+Approach:
+
+Database Connection: Used pg library to connect to PostgreSQL.
+Schema Creation: Defined a table schema for user information.
+CRUD Operations: Implemented functions for Create, Read, Update, and Delete operations.
+Key Considerations:
+Ensuring secure connection to the database.
+Designing a robust and scalable schema.
+Challenges:
+Managing database connections and query performance.
+Handling SQL injection and other security concerns.
+Task 7: Database Schema
+Objective: Design a simple relational database schema for a blogging platform with tables for users, posts, and comments.
+Approach:
+
+Schema Design: Created tables for users, posts, and comments with appropriate relationships (e.g., foreign keys).
+Key Considerations:
+Ensuring referential integrity between tables.
+Designing efficient indexes for query performance.
+Challenges:
+Balancing normalization with query performance.
+Handling cascading updates and deletes.
+Task 8: SQL Queries
+Objective: Write SQL queries to retrieve posts by a specific user, and count comments on a post.
+Approach:
+
+Query Writing: Developed SQL queries to fetch posts by user ID and to count comments for a specific post.
+Key Considerations:
+Ensuring queries are optimized for performance.
+Handling edge cases such as users with no posts or posts with no comments.
+Challenges:
+Writing efficient joins and subqueries.
+Ensuring accuracy of aggregate functions.
+Task 9: Authentication
+Objective: Implement user authentication in the Node.js application using Passport.js.
+Approach:
+
+Passport.js Integration: Set up Passport.js with local strategy for username/password authentication.
+Session Management: Configured session management to maintain user login state.
+Protected Routes: Ensured certain API endpoints are accessible only to authenticated users.
+Key Considerations:
+Ensuring secure password handling (e.g., hashing).
+Protecting routes and handling authentication failures gracefully.
+Challenges:
+Implementing secure session management.
+Integrating authentication seamlessly with existing routes and middleware.
